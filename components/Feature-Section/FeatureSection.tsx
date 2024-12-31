@@ -21,9 +21,9 @@ export default function FeatureSection({
     bgColor,
     componentType,
 }: FeatureSectionProps) {
-    //@ts-ignore
+    // @ts-expect-error This error is expected due to a type mismatch in external data
     const [caseStudies, setCaseStudies] = useState<any[]>([]);
-    //@ts-ignore
+    // @ts-expect-error This error is expected due to a type mismatch in external data
     const [insights, setInsights] = useState<any[]>([]);
 
     useEffect(() => {

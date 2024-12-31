@@ -10,7 +10,7 @@ import { builder } from "@builder.io/sdk";
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
 export default function Header() {
-    //@ts-ignore
+    // @ts-expect-error This error is expected due to a type mismatch in external data
     const [navlinks, setNavlinks] = useState<any[]>([]);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 

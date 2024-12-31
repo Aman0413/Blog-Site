@@ -12,7 +12,7 @@ interface BlogSectionProps {
 }
 
 export default function BlogSection({ heading, subheading }: BlogSectionProps) {
-    //@ts-ignore
+    // @ts-expect-error This error is expected due to a type mismatch in external data
     const [blogData, setBlogData] = useState<any[]>([]);
 
     useEffect(() => {
