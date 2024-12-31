@@ -4,7 +4,7 @@ import Blog from "./components/Blog-Section/Blog";
 import BlogList from "./components/Blog-Section/BlogList";
 
 import BlogSection from "./components/Blog-Section/BlogSection";
-import Check from "./components/check/Check";
+
 import FaqItem from "./components/FAQ-Section/FaqItem";
 import FaqSection from "./components/FAQ-Section/FaqSection";
 import FeatureBlog from "./components/Feature-Section/FeatureBlog";
@@ -40,27 +40,6 @@ Builder.registerComponent(FaqItem, {
       name: "question",
       type: "string",
       required: true,
-    },
-  ],
-});
-
-Builder.registerComponent(Check, {
-  name: "Check",
-  inputs: [
-    {
-      name: "heading",
-      type: "string",
-      defaultValue: "Default Heading",
-    },
-    {
-      name: "backgroundColor",
-      type: "color",
-      defaultValue: "#E0F2FE", // Equivalent to bg-blue-100
-    },
-    {
-      name: "textColor",
-      type: "color",
-      defaultValue: "#000000", // Default black text color
     },
   ],
 });
