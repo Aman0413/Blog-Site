@@ -19,6 +19,8 @@ export default function Header() {
             const data = await builder.getAll("nav-link", { prerender: false });
             setNavlinks(data);
 
+            console.log("NAVDATA", data);
+
         }
 
         fetchNavLinks();
