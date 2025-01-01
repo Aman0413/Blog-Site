@@ -14,14 +14,13 @@ interface BlogSectionProps {
 
 export default function BlogSection({ heading, subheading }: BlogSectionProps) {
 
-    // @ts-ignore: Bypassing type error temporarily
+
     const [blogData, setBlogData] = useState<any[]>([]);
 
     useEffect(() => {
         async function fetchBlogs() {
             const data = await builder.getAll("blog", { prerender: false });
             setBlogData(data);
-            console.log("Data", data);
         }
         fetchBlogs();
     }, []);

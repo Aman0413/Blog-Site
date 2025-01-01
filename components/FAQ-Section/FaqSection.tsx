@@ -7,7 +7,7 @@ import { builder } from "@builder.io/sdk";
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY!);
 
 export default function FaqSection() {
-    // @ts-expect-error This error is expected due to a type mismatch in external data
+
     const [faqs, setFaqs] = useState<any[]>([]);
 
     useEffect(() => {
