@@ -20,11 +20,13 @@ export interface caseStudyType {
 }
 
 export interface BlogType {
-  authorimg: string;
-  authorname: string;
-  heading: string;
-  image: string;
-  slug: string;
-  subheading: string;
-  time: string;
+  data?: {
+    authorimg: string;
+    authorname: string;
+    heading: string;
+    image: string;
+    slug: string;
+    subheading: string;
+    time: string;
+  };
 }
